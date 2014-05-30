@@ -1,0 +1,37 @@
+PODS:
+  - AFNetworking (2.2.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.2.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.2.4):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.2.4)
+  - AFNetworking/Security (2.2.4)
+  - AFNetworking/Serialization (2.2.4)
+  - AFNetworking/UIKit (2.2.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - FXBlurView (HEAD based on 1.6.1)
+  - Google-Maps-iOS-SDK (1.8.1)
+  - SWRevealViewController (HEAD based on 2.0.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.2.2)
+  - FXBlurView (HEAD)
+  - Google-Maps-iOS-SDK (~> 1.8)
+  - SWRevealViewController (HEAD)
+
+SPEC CHECKSUMS:
+  AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
+  FXBlurView: 1d01b96076d65027314d1be024c7506c292392aa
+  Google-Maps-iOS-SDK: 542561448224b92d790483674b7313b13764e624
+  SWRevealViewController: 1ef1b6a87e67c65491a2c51219f64c678e725d91
+
+COCOAPODS: 0.33.1

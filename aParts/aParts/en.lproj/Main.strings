@@ -1,0 +1,15 @@
+
+/* Class = "IBUILabel"; text = "Заправки"; ObjectID = "DfE-AY-rtN"; */
+"DfE-AY-rtN.text" = "Заправки";
+
+/* Class = "IBUILabel"; text = "Карта"; ObjectID = "DvI-jL-5bQ"; */
+"DvI-jL-5bQ.text" = "Карта";
+
+/* Class = "IBUILabel"; text = "СТО"; ObjectID = "JRm-ne-Km2"; */
+"JRm-ne-Km2.text" = "СТО";
+
+/* Class = "IBUILabel"; text = "Шиномонтаж"; ObjectID = "YN2-Rc-jB9"; */
+"YN2-Rc-jB9.text" = "Шиномонтаж";
+
+/* Class = "IBUILabel"; text = "Запчасти"; ObjectID = "vip-aK-UKd"; */
+"vip-aK-UKd.text" = "Запчасти";

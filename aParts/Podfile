@@ -1,0 +1,5 @@
+platform :ios, '7.1'
+pod 'AFNetworking', '~> 2.2.2'
+pod 'Google-Maps-iOS-SDK', '~> 1.8'
+pod 'SWRevealViewController', :head
+pod 'FXBlurView', :head
