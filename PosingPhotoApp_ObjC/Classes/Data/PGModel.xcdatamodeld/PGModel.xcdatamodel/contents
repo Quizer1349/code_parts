@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Favorites" representedClassName="Favorites" syncable="YES">
+        <attribute name="dressType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="favsPose" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pose" inverseName="poseFavs" inverseEntity="Pose" syncable="YES"/>
+    </entity>
+    <entity name="Pose" representedClassName="Pose" syncable="YES">
+        <attribute name="dressCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="isSubPose" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="mainPose" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="poseId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="poseImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="posePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="poseTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="poseFavs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Favorites" inverseName="favsPose" inverseEntity="Favorites" syncable="YES"/>
+    </entity>
+    <entity name="Rule" representedClassName="Rule" syncable="YES">
+        <attribute name="falseImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ruleDescriprion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ruleId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="ruleTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trueImage" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Favorites" positionX="-4518" positionY="-8627" width="128" height="88"/>
+        <element name="Pose" positionX="-4437" positionY="-8883" width="128" height="180"/>
+        <element name="Rule" positionX="-4601" positionY="-8883" width="128" height="118"/>
+    </elements>
+</model>

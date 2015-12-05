@@ -1,0 +1,12 @@
+platform :ios, "8.0"
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+inhibit_all_warnings!
+
+pod 'Parse'
+pod 'Fabric'
+pod 'Crashlytics'
+pod 'Google/Analytics', '~> 1.0.0'
+pod 'ChimpKit'
+#pod 'Localize-Swift', '~> 0.1'

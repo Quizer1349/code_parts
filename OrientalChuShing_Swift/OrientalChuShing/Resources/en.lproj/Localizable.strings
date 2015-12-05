@@ -1,0 +1,58 @@
+/* 
+  localizable.strings
+  OrientalChuShing
+
+  Created by Alexey Sklyarenko on 12.09.15.
+  Copyright (c) 2015 itinarray. All rights reserved.
+*/
+
+//Sign up 
+"First name" = "First name";
+"Email" = "Email";
+"Sign up" = "Sign up";
+"Skip" = "Skip";
+"Incorrect Email" = "Incorrect Email";
+"Name can`t be empty" = "Name can`t be empty";
+
+//Main menu
+"Menu" = "Menuuuuu";
+"About Us" = "About Us";
+"Find a Location" = "Find a Location";
+"Contact Us" = "Contact Us";
+"Settings" = "Settings";
+
+//Settings
+"change language" = "change language";
+
+//Alerts
+"networkErrorTitle" = "Network Error";
+"networkErrorText"  = "Please check network settings and try again.";
+
+"sendEmailErrorTitle" = "Can`t send email";
+"sendEmailErrorText"  = "Please check e-mail configuration and try again.";
+
+//Incoming push alert
+"Cancel" = "Cancel";
+"Show" = "Show";
+
+//Fina a Location
+"distance" = "Distance";
+
+//Place details
+"Details" = "Details";
+"Get Direction" = "Get Direction";
+"Call Us" = "Call Us";
+"Email Us" = "Email Us";
+"Working Hours" = "Working Hours";
+
+//Mail contact us subject
+"mailContactUsSubject" = "Email from Oriental Chu Shing Restaurant app";
+
+//Week days
+"Sun" = "Sun";
+"Mon" = "Mon";
+"Tue" = "Tue";
+"Wed" = "Wed";
+"Thu" = "Thu";
+"Fri" = "Fri";
+"Sat" = "Sat";

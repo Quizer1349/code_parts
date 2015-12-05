@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PGCircleMenu">
+            <connections>
+                <outlet property="buttonView" destination="rvA-k0-3tA" id="Z5E-lI-XvF"/>
+                <outlet property="favMenuButton" destination="XSk-rL-q2T" id="rFt-gA-mnW"/>
+                <outlet property="mainButtonBackground" destination="Qte-8W-tlj" id="TzK-f1-TDu"/>
+                <outlet property="mainMenuButton" destination="fBO-Xr-hqU" id="SEC-54-gC8"/>
+                <outlet property="menuBackground" destination="rr1-Z3-hbH" id="CTQ-7f-T8s"/>
+                <outlet property="saveMenuButton" destination="qFO-kS-ggb" id="XvN-Gz-HVb"/>
+                <outlet property="shareMenuView" destination="375-ay-ymG" id="jab-VH-lbQ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Dgv-4d-tve"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="255" height="255"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-footer-left-menu.png" translatesAutoresizingMaskIntoConstraints="NO" id="rr1-Z3-hbH" userLabel="backGround">
+                    <rect key="frame" x="63" y="63" width="192" height="192"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-footer-menu-wrapper.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qte-8W-tlj">
+                    <rect key="frame" x="157" y="157" width="98" height="98"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rvA-k0-3tA" userLabel="ButtonsView">
+                    <rect key="frame" x="35" y="35" width="220" height="220"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFO-kS-ggb" userLabel="SaveButton" customClass="OBShapedButton">
+                            <rect key="frame" x="20" y="145" width="104" height="75"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <inset key="imageEdgeInsets" minX="25" minY="25" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="icon-footer-save.png" backgroundImage="bg-footer-save.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="icon-footer-save-hover.png" backgroundImage="bg-footer-save-hover.png"/>
+                            <state key="highlighted" image="icon-footer-save-hover.png" backgroundImage="bg-footer-save-hover.png"/>
+                            <connections>
+                                <action selector="savePressed:" destination="-1" eventType="touchUpInside" id="aEK-Bc-ev6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSk-rL-q2T" userLabel="FavButton" customClass="OBShapedButton">
+                            <rect key="frame" x="36" y="81" width="111" height="100"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <inset key="imageEdgeInsets" minX="25" minY="25" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="icon-footer-favorites.png" backgroundImage="bg-footer-favorites.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="icon-footer-favorites-hover.png" backgroundImage="bg-footer-favorites-hover.png"/>
+                            <state key="highlighted" image="icon-footer-favorites-hover.png" backgroundImage="bg-footer-favorites-hover.png"/>
+                            <connections>
+                                <action selector="favoritesPressed:" destination="-1" eventType="touchUpInside" id="uAm-ZE-IiQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5F-iA-ax0" userLabel="TipsButton" customClass="OBShapedButton">
+                            <rect key="frame" x="80" y="36" width="100" height="111"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <inset key="imageEdgeInsets" minX="25" minY="25" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="icon-footer-tips.png" backgroundImage="bg-footer-tips.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="icon-footer-tips-hover.png" backgroundImage="bg-footer-tips-hover.png"/>
+                            <state key="highlighted" image="icon-footer-tips-hover.png" backgroundImage="bg-footer-tips-hover.png"/>
+                            <connections>
+                                <action selector="tipsPressed:" destination="-1" eventType="touchUpInside" id="lEb-2a-4VU"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2c0-V4-hzM" userLabel="FotoButton" customClass="OBShapedButton">
+                            <rect key="frame" x="145" y="20" width="75" height="104"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <inset key="imageEdgeInsets" minX="25" minY="25" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="icon-footer-foto.png" backgroundImage="bg-footer-foto.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="icon-footer-foto-hover.png" backgroundImage="bg-footer-foto-hover.png"/>
+                            <state key="highlighted" image="icon-footer-foto-hover.png" backgroundImage="bg-footer-foto-hover.png"/>
+                            <connections>
+                                <action selector="photoPressed:" destination="-1" eventType="touchUpInside" id="OLj-kL-GxY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="375-ay-ymG" userLabel="SareMenuView" customClass="PGShareButtonsView">
+                    <rect key="frame" x="0.0" y="0.0" width="212" height="266"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6P-b8-OT1" userLabel="VKButton">
+                            <rect key="frame" x="149" y="16" width="46" height="45"/>
+                            <state key="normal" image="icon-vk.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="icon-vk-hover.png"/>
+                            <connections>
+                                <action selector="vkPressed:" destination="-1" eventType="touchUpInside" id="auF-FM-yEa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlV-nP-cSx" userLabel="InstagramButton">
+                            <rect key="frame" x="98" y="41" width="46" height="45"/>
+                            <state key="normal" image="icon-instagram.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="icon-instagram-hover.png"/>
+                            <connections>
+                                <action selector="instagrammPressed:" destination="-1" eventType="touchUpInside" id="yUe-n5-ti3"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLy-96-bF4" userLabel="TwitterButton">
+                            <rect key="frame" x="53" y="84" width="46" height="45"/>
+                            <state key="normal" image="icon-twitter.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="icon-twitter-hover.png"/>
+                            <connections>
+                                <action selector="twitterPressed:" destination="-1" eventType="touchUpInside" id="8lf-cm-YNn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWo-V7-oEm" userLabel="FacebookButton">
+                            <rect key="frame" x="18" y="139" width="46" height="45"/>
+                            <state key="normal" image="icon-facebook.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="icon-facebook-hover.png"/>
+                            <connections>
+                                <action selector="facebookPressed:" destination="-1" eventType="touchUpInside" id="Q05-8S-dcx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QJ-Ta-u6w" userLabel="MailButton">
+                            <rect key="frame" x="3" y="196" width="46" height="45"/>
+                            <state key="normal" image="icon-mail.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="icon-mail-hover.png"/>
+                            <connections>
+                                <action selector="mailPressed:" destination="-1" eventType="touchUpInside" id="oGv-Jb-PUk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBO-Xr-hqU" userLabel="MenuButton" customClass="OBShapedButton">
+                    <rect key="frame" x="164" y="164" width="91" height="91"/>
+                    <inset key="imageEdgeInsets" minX="25" minY="25" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="circleMenu_mainBtn.png" backgroundImage="bg-footer-menu.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="circleMenu_mainBtn.png" backgroundImage="bg-footer-menu-hover.png"/>
+                    <state key="highlighted" image="circleMenu_mainBtn.png" backgroundImage="bg-footer-menu-hover.png"/>
+                    <connections>
+                        <action selector="mainButtonPressed:" destination="-1" eventType="touchUpInside" id="YIO-sV-eir"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="442.5" y="438.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg-footer-favorites-hover.png" width="111" height="99"/>
+        <image name="bg-footer-favorites.png" width="111" height="99"/>
+        <image name="bg-footer-foto-hover.png" width="75" height="104"/>
+        <image name="bg-footer-foto.png" width="75" height="104"/>
+        <image name="bg-footer-left-menu.png" width="192" height="192"/>
+        <image name="bg-footer-menu-hover.png" width="45" height="45"/>
+        <image name="bg-footer-menu-wrapper.png" width="98" height="99"/>
+        <image name="bg-footer-menu.png" width="91" height="91"/>
+        <image name="bg-footer-save-hover.png" width="104" height="75"/>
+        <image name="bg-footer-save.png" width="104" height="75"/>
+        <image name="bg-footer-tips-hover.png" width="99" height="111"/>
+        <image name="bg-footer-tips.png" width="99" height="111"/>
+        <image name="circleMenu_mainBtn.png" width="41" height="40"/>
+        <image name="icon-facebook-hover.png" width="45" height="45"/>
+        <image name="icon-facebook.png" width="45" height="45"/>
+        <image name="icon-footer-favorites-hover.png" width="39" height="36"/>
+        <image name="icon-footer-favorites.png" width="39" height="36"/>
+        <image name="icon-footer-foto-hover.png" width="36" height="26"/>
+        <image name="icon-footer-foto.png" width="36" height="26"/>
+        <image name="icon-footer-save-hover.png" width="26" height="27"/>
+        <image name="icon-footer-save.png" width="26" height="27"/>
+        <image name="icon-footer-tips-hover.png" width="18" height="31"/>
+        <image name="icon-footer-tips.png" width="18" height="31"/>
+        <image name="icon-instagram-hover.png" width="45" height="45"/>
+        <image name="icon-instagram.png" width="45" height="45"/>
+        <image name="icon-mail-hover.png" width="45" height="45"/>
+        <image name="icon-mail.png" width="45" height="45"/>
+        <image name="icon-twitter-hover.png" width="45" height="45"/>
+        <image name="icon-twitter.png" width="45" height="45"/>
+        <image name="icon-vk-hover.png" width="46" height="45"/>
+        <image name="icon-vk.png" width="46" height="45"/>
+    </resources>
+</document>
